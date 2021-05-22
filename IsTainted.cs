@@ -85,6 +85,10 @@ namespace TaintedChecker
                     MyConsole.Error("[ + ] The scan shows that your device has been Tainted.");
                     MyConsole.Error("[ + ] Don't panic, most Tainted reports don't go through unless there is an upcoming banwave.");
                 }
+                else
+                {
+                    MyConsole.Print("[ + ] Your device is safe, make sure to not use any free exploits.");
+                }
                 return;
             }
             MyConsole.Error("There was an issue locating the logs directory.\nAttempt to fix this issue by reinstalling Roblox and playing the game a few times.\nOther than that there is no permanent fix for this.");
